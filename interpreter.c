@@ -12,27 +12,33 @@ void interpret(char* in)
     size_t i;       /* size_t is apparently more adequate to */
     size_t loop;    /* control unsigned arrays and pointers  */
 
-    for (i = 0; in[i] != '\0' && in[i] != EOF; i++)
+    for (i = 0; in[i] != '\0' && in[i] != EOF; ++i)
     {
         read = in[i];
 
         if (read == '>')
         {
+            ++ptr;
         }
         else if (read == '<')
         {
+            --ptr;
         }
         else if (read == '+')
         {
+            ++*ptr;
         }
         else if (read == '-')
         {
+            --*ptr;
         }
         else if (read == '.')
         {
+            putchar(*ptr);
         }
         else if (read == ',')
         {
+            *ptr=getchar();
         }
         else if (read == '[')
         {
