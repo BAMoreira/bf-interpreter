@@ -14,7 +14,32 @@ void interpret(char* in)
 
     for (i = 0; in[i] != '\0' && in[i] != EOF; i++)
     {
-        
+        read = in[i];
+
+        if (read == '>')
+        {
+        }
+        else if (read == '<')
+        {
+        }
+        else if (read == '+')
+        {
+        }
+        else if (read == '-')
+        {
+        }
+        else if (read == '.')
+        {
+        }
+        else if (read == ',')
+        {
+        }
+        else if (read == '[')
+        {
+        }
+        else if (read == ']')
+        {
+        }
     }
 
     return;
