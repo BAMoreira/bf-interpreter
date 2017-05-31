@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define INSIZE 1024
+
 void interpret(char* in)
 {
     unsigned char mem[30000] = {0}; /* memory space for pointer */
@@ -79,7 +81,9 @@ void interpret(char* in)
 
 int main(void)
 {
-    interpret("+++++-----[>+++++<-]>.");
-
+    char in[INSIZE] = {0};
+    if (fgets(in, INSIZE, stdin) != NULL)
+        interpret(in);
+    
     return EXIT_SUCCESS;
 }
