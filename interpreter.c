@@ -42,9 +42,35 @@ void interpret(char* in)
         }
         else if (read == '[')
         {
+            if (*ptr)
+                continue;
+            else
+            {
+                loop = 1;
+                while (loop > 0)
+                {
+                    read = in[++i];
+                    if (read == ']')
+                        loop--;
+                    else if (read == '[')
+                        loop++;
+                }
+            }
         }
         else if (read == ']')
         {
+            if (*ptr)
+            {
+                loop = 1;
+                while (loop > 0)
+                {
+                    read = in[++i];
+                    if (read == '[')
+                        loop--;
+                    else if (read == ']')
+                        loop++;
+                }
+            }
         }
     }
 
