@@ -64,7 +64,7 @@ void interpret(char* in)
                 loop = 1;
                 while (loop > 0)
                 {
-                    read = in[++i];
+                    read = in[--i];
                     if (read == '[')
                         loop--;
                     else if (read == ']')
@@ -79,5 +79,7 @@ void interpret(char* in)
 
 int main(void)
 {
+    interpret("+++++-----[>+++++<-]>.");
+
     return EXIT_SUCCESS;
 }
