@@ -36,7 +36,9 @@ void interpret(char* in)
         }
         else if (read == '.')
         {
-            putchar(*ptr);
+            /* char version: */
+            /* putchar(*ptr); */
+            printf("%d\n",*ptr);
         }
         else if (read == ',')
         {
