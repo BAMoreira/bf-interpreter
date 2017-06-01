@@ -1,3 +1,10 @@
+/* Exercise 10: Brain Force
+ * Author: Bernardo de Azevedo Moreira
+ * Date: 31/05/2017
+ *
+ * DISCLAIMER: This program comes with no warranty whatsoever: use and modify it at your own risk
+ */
+
 #include <stdio.h> 
 #include <stdlib.h>
 #include <string.h>
