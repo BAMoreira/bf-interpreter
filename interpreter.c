@@ -45,7 +45,7 @@ void interpret(char* in)
         {
             /* char version: */
             /* putchar(*ptr); */
-            printf("%d\n",*ptr);
+            printf("%d ",*ptr);
         }
         else if (read == ',')
         {
@@ -84,6 +84,7 @@ void interpret(char* in)
             }
         }
     }
+    printf("\n");
 
     return;
 }
